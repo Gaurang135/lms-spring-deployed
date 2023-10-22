@@ -13,6 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SecurityScheme(name = "lmsapi", scheme = "basic", type = SecuritySchemeType.HTTP, in = SecuritySchemeIn.HEADER)
 public class LmsApplication {
 
+
 	public static void main(String[] args) {
 		SpringApplication.run(LmsApplication.class, args);
 	}

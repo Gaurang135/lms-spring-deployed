@@ -39,7 +39,7 @@ public class ApplicationController {
         return "Hello Spring boot";
     }
 
-    @GetMapping( "/BALANCE")
+    @PostMapping( "/BALANCE")
     public ResponseEntity<BalanceDto> getBalance(@RequestBody @Valid BalanceRequest balanceRequest) {
 
         BalanceDto balanceDto = serviceImpl.getBalance(balanceRequest);
